@@ -59,31 +59,38 @@ python manage.py createsuperuser
 
 ## API Endpoints
 - **signup:** POST **/auth/signup/**
-Name  | Type
------ | -----
-username  | string
-email  | string
-password  | string
+
+| Name  | Type       |
+| ----- | ---------- |
+| username  | string |
+| email  | string    |
+| password  | string |
+
 
 - **login:** POST **/auth/login/**
-Name  | Type
------ | -----
-email  | string
-password  | string
 
-- **Add Box:** POST **/inventory/boxes/** (Permissions: Must be staff )
-Name  | Type
------ | -----
-length  | integer
-breadth  | integer
-height  | integer
+| Name  | Type       |
+| ----- | ---------- |
+| email  | string    |
+| password  | string |
+
+
+- **Add Box:** POST **/inventory/boxes/** (Permissions: Must be staff)
+
+| Name  | Type       |
+| ----- | ---------- |
+| length  | integer  |
+| breadth  | integer |
+| height  | integer  |
+
 
 - **Update Box:** PATCH **/inventory/boxes/<box_id>/** (Permissions: must be staff)
-Name  | Type
------ | -----
-length  | integer (optional)
-breadth  | integer (optional)
-height  | integer (optional)
+
+| Name  | Type                  |
+| ----- | --------------------- |
+| length  | integer (optional)  |
+| breadth  | integer (optional) |
+| height  | integer (optional)  |
 
 - **List All Boxes:** GET **/inventory/boxes/** (Permissions: Any User, Filters Applicable)
 - **List User's Boxes:** GET **/inventory/boxes/myboxes/** (Permissions: Must be staff, Filters Applicable)
