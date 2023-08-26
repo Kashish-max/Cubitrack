@@ -88,9 +88,9 @@ python manage.py createsuperuser
 
 | Name  | Type                  |
 | ----- | --------------------- |
-| length  | integer (optional)  |
-| breadth  | integer (optional) |
-| height  | integer (optional)  |
+| length (optional) | integer   |
+| breadth (optional) | integer  |
+| height (optional) | integer   |
 
 - **List All Boxes:** GET **/inventory/boxes/** (Permissions: Any User, Filters Applicable)
 - **List User's Boxes:** GET **/inventory/boxes/myboxes/** (Permissions: Must be staff, Filters Applicable)
