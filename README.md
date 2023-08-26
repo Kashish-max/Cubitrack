@@ -52,7 +52,7 @@ python manage.py createsuperuser
 
 5. After signing up:
     - Verify your account from a link sent to your email.
-    - Use the access token received in the response of the verification link as a **Authorization: Bearer _your-access-token_** for API requests.
+    - Use the access token received in the response of the verification link as auth header `**Authorization: Bearer _your-access-token_**` for API requests.
     - You can login again to verify your account or to get access token again in case the token is expired or lost(**note: you need to verify your account to get access token**)
 
 6. All non permitted actions are handled with proper http status code. Also, Default conditions of area, volume and other limit are implemented.
